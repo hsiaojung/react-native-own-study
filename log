@@ -1,0 +1,1000 @@
+ 1001  ls
+ 1002  df
+ 1003  cd /home/cyril/
+ 1004  vim minicom.cap 
+ 1005  rm -rf minicom.
+ 1006  exit
+ 1007  sudo minicom /dev/ttyUSB0 
+ 1008  sudo minicom /dev/ttyUSB1 
+ 1009  cd /home/cyril/
+ 1010  ls
+ 1011  touch arm.log
+ 1012  cat ~/minicom.cap
+ 1013  cat ~/minicom.cap2 
+ 1014  vim ~/minicom.cap2 
+ 1015  vim ~/arm.log 
+ 1016  vim ~/minicom.cap 
+ 1017  vim  /home/cyril/minicom.cap 
+ 1018  rm ~/minicom.cap 
+ 1019  vim  /home/cyril/minicom.cap 
+ 1020  cat /home/cyril/minicom.cap 
+ 1021  cat /home/cyril/minicom.cap2 
+ 1022  cat /home/cyril/minicom.cap2
+ 1023  cat /home/cyril/minicom.cap
+ 1024  vim  /home/cyril/minicom.cap
+ 1025  dmesg
+ 1026  ifconfig
+ 1027  dmesg
+ 1028  sudo minicom /dev/ttyUSB0 
+ 1029  exit
+ 1030  sudo minicom /dev/ttyUSB1
+ 1031  ls /home/cyril/
+ 1032  ls -la
+ 1033  ls -law
+ 1034  ls -lw
+ 1035  ls -l
+ 1036  ls 
+ 1037  ls -l
+ 1038  ls -lw
+ 1039  ls -la
+ 1040  sudo poweroff
+ 1041  sudo minicom /dev/ttyUSB0
+ 1042  vim /home/cyril/12.10.111.10.ttyUSB0 
+ 1043  exit
+ 1044  sudo minicom /dev/ttyUSB1
+ 1045  exit
+ 1046  sudo poweroff
+ 1047  sudo minicom /dev/ttyUSB1
+ 1048  sudo minicom /dev/ttyUSB0 
+ 1049  ifconfig
+ 1050  ls -la
+ 1051  ps -A
+ 1052  cd /home/cyril/work/
+ 1053  ls
+ 1054  df
+ 1055  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7
+ 1056  ls
+ 1057  cd work/
+ 1058  ls
+ 1059  git clone https://github.com/tianocore/edk2.git
+ 1060  cd edk2
+ 1061  git submodule update --init
+ 1062  cd ..
+ 1063  git clone https://github.com/tianocore/edk2-platforms.git
+ 1064  git clone https://github.com/tianocore/edk2-non-osi.git
+ 1065  export WORKSPACE=$PWD
+ 1066  export PACKAGES_PATH=$WORKSPACE/edk2:$WORKSPACE/edk2-platforms/Silicon/Intel:$WORKSPACE/edk2-platforms/Platform/Intel:$WORKSPACE/edk2-non-osi/Silicon/Intel
+ 1067  cd $WORKSPACE/edk2
+ 1068  . edksetup.sh
+ 1069  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1070  sudo apt-get install libcommon-sense-perl
+ 1071  . edksetup.sh
+ 1072  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1073  df
+ 1074  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7
+ 1075  cd work/
+ 1076  export WORKSPACE=$PWD
+ 1077  export PACKAGES_PATH=$WORKSPACE/edk2:$WORKSPACE/edk2-platforms/Silicon/Intel:$WORKSPACE/edk2-platforms/Platform/Intel:$WORKSPACE/edk2-non-osi/Silicon/Intel
+ 1078  cd $WORKSPACE/edk2
+ 1079  . edksetup.sh
+ 1080  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1081  sudo apt install openssl gcab  nasm
+ 1082  sudo apt install openssl gcab  nasm iasl
+ 1083  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1084  dpkg -l | grep libssl-dev
+ 1085  sudo apt-get update -y1
+ 1086  sudo apt-get install -y libssl-dev
+ 1087  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1088  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/IA32/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/
+ 1089  ls
+ 1090  cd cypto
+ 1091  ls
+ 1092  cd crypto/
+ 1093  ls
+ 1094  ls -l ./o_init.obj
+ 1095  ls -l ./o_init.*
+ 1096  export PACKAGES_PATH=$WORKSPACE/edk2:$WORKSPACE/edk2-platforms/Silicon/Intel:$WORKSPACE/edk2-platforms/Platform/Intel:$WORKSPACE/edk2-non-osi/Silicon/Intel
+ 1097  cd $WORKSPACE/edk2
+ 1098  . edksetup.sh
+ 1099  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1100  ls -l /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/IA32/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto/o_str.obj.deps
+ 1101  sudo chmoe 777 -R /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/IA32/CryptoPkg/Library/OpensslLib/OpensslLib/
+ 1102  sudo chmod 777 -R /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/IA32/CryptoPkg/Library/OpensslLib/OpensslLib
+ 1103  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1104  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/
+ 1105  export WORKSPACE=$PWD
+ 1106  export PACKAGES_PATH=$WORKSPACE/edk2:$WORKSPACE/edk2-platforms/Silicon/Intel:$WORKSPACE/edk2-platforms/Platform/Intel:$WORKSPACE/edk2-non-osi/Silicon/Intel
+ 1107  cd $WORKSPACE/edk2
+ 1108  . edksetup.sh
+ 1109  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1110  ls -l /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/edk2-platforms/Platform/Intel/Vlv2TbltDevicePkg/Library/EfiRegTableLib/EfiRegTableLib.inf 
+ 1111  sudo build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1112  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1113  sudo build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1114  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1115  git submodule update --init --recursive
+ 1116  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1117  cat /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/IA32/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto/o_dir.obj.deps
+ 1118  cat /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/IA32/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto/o_dir.obj.deps 
+ 1119  vim  /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/IA32/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto/o_dir.obj.deps 
+ 1120  ls /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/IA32/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto/o_init.obj.deps
+ 1121  cat  /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/IA32/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto/o_init.obj.deps
+ 1122  cd   /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/IA32/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto/
+ 1123  ls
+ 1124  ls -la
+ 1125  cd -
+ 1126  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1127  build -a IA32 -a X64 -n 5 -t GCC5 -b RELEASE -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc -j Vlv.log
+ 1128  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc -y Vlv.report
+ 1129  build -a IA32 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgIA32.dsc
+ 1130  build -a IA64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgIA32.dsc
+ 1131  build -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgIA32.dsc
+ 1132  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc  -j cyril.log
+ 1133  build  -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc  -j cyril.log
+ 1134  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc  -j cyril.log
+ 1135  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc -y Vlv.report
+ 1136  build -a IA32 -a X64 -n 5 -t VS2015x86 -b DEBUG -p Vlv2TbltDevicePkg\PlatformPkgX64.dsc
+ 1137  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1138  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc -y Vlv.report
+ 1139  build
+ 1140  build cleanall
+ 1141  build -a IA32 -a X64 -n 5 -t GCC5 cleanall
+ 1142  build  cleanall
+ 1143  build -a IA32 -a X64 -n 5 -t GCC5 Cleanall
+ 1144  build cleanall
+ 1145  build cleanall -a IA32 -a X64 -n 5 -t GCC5 
+ 1146  build cleanall -a IA32 -a X64 
+ 1147  build cleanall -a IA32 
+ 1148  build cleanall
+ 1149  cd ..
+ 1150  ls
+ 1151  rm -rf Build/
+ 1152  ls
+ 1153  rm -rf Build/ edk2*
+ 1154  ls
+ 1155  mkdir uefi
+ 1156  cd uefi/
+ 1157  ls
+ 1158  git clone https://github.com/tianocore/edk2.git
+ 1159  cd edk2
+ 1160  ls
+ 1161  git clone https://github.com/tianocore/edk2.git
+ 1162  cd edk2
+ 1163  ls
+ 1164  cd ..
+ 1165  ls
+ 1166  cd uefi/
+ 1167  ls
+ 1168  git clone https://github.com/tianocore/edk2.git
+ 1169  ls
+ 1170  cd edk2/
+ 1171  ls
+ 1172  git submodule update --init
+ 1173  cd ..
+ 1174  git clone https://github.com/tianocore/edk2-platforms.git
+ 1175  ls
+ 1176  git clone https://github.com/tianocore/edk2-non-osi.git
+ 1177  export WORKSPACE=$PWD
+ 1178  export PACKAGES_PATH=$WORKSPACE/edk2:$WORKSPACE/edk2-platforms/Silicon/Intel:$WORKSPACE/edk2-platforms/Platform/Intel:$WORKSPACE/edk2-non-osi/Silicon/Intel
+ 1179  cd $WORKSPACE/edk2
+ 1180  . edksetup.sh
+ 1181  export PACKAGES_PATH=$WORKSPACE/edk2:$WORKSPACE/edk2-platforms/Silicon/Intel:$WORKSPACE/edk2-platforms/Platform/Intel:$WORKSPACE/edk2-non-osi/Silicon/Intel
+ 1182  cd ..
+ 1183  cd $WORKSPACE/edk2
+ 1184  . edksetup.sh
+ 1185  cd ..
+ 1186  export WORKSPACE=$PWD
+ 1187  export PACKAGES_PATH=$WORKSPACE/edk2:$WORKSPACE/edk2-platforms/Silicon/Intel:$WORKSPACE/edk2-platforms/Platform/Intel:$WORKSPACE/edk2-non-osi/Silicon/Intel
+ 1188  cd $WORKSPACE/edk2
+ 1189  . edksetup.sh
+ 1190  sdcd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/edk2/BaseTools/
+ 1191  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/edk2/BaseTools/
+ 1192  PWD
+ 1193  pwd
+ 1194  exit
+ 1195  ls -la /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/X64/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto/rc4/rc4_skey.obj.deps
+ 1196  sudo chmod 777 -R   /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/X64/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto
+ 1197  ls -la /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/X64/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto/rc4/rc4_skey.obj.deps
+ 1198  ls ../
+ 1199  ls -la /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/X64/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto/rc4/rc4_skey.obj.deps
+ 1200  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc
+ 1201  cd  /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5/IA32/CryptoPkg/Library/OpensslLib/OpensslLib/OUTPUT/openssl/crypto/
+ 1202  ls
+ 1203  ls -LA
+ 1204  L
+ 1205  ls
+ 1206  ls -a
+ 1207  ls -la
+ 1208  cd ..
+ 1209  ls
+ 1210  cd ..
+ 1211  ls
+ 1212  cd ..
+ 1213  ls
+ 1214  cd ..
+ 1215  ls
+ 1216  cd ..
+ 1217  ls
+ 1218  cd ..
+ 1219  ls
+ 1220  cd ..
+ 1221  ls
+ 1222  cd /home/cyril/
+ 1223  pwd
+ 1224  cd /home/cyril/Downloads/
+ 1225  sudo dpkg -i conan-ubuntu-64_1_25_0.deb 
+ 1226  exit
+ 1227  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/uefi/edk2
+ 1228  ls
+ 1229  cd ..
+ 1230  export WORKSPACE=$PWD
+ 1231  export PACKAGES_PATH=$WORKSPACE/edk2:$WORKSPACE/edk2-platforms/Silicon/Intel:$WORKSPACE/edk2-platforms/Platform/Intel:$WORKSPACE/edk2-non-osi/Silicon/Intel
+ 1232  cd $WORKSPACE/edk2
+ 1233  . edksetup.sh
+ 1234  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc -y Vlv.report
+ 1235  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/uefi/edk2/BaseTools/Source/C/bin/
+ 1236  ls
+ 1237  cd ..
+ 1238  la
+ 1239  make clean
+ 1240  make all
+ 1241  cd -
+ 1242  cd ..
+ 1243  cd BaseTools/Source/C/
+ 1244  ls
+ 1245  make install
+ 1246  sudo make install
+ 1247  ls
+ 1248  cd bin/
+ 1249  ld
+ 1250  ;s
+ 1251  ls
+ 1252  cd ..
+ 1253  . edksetup.sh
+ 1254  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc -y Vlv.report
+ 1255  build -a IA32 -a X64 -n 5 -t GCC5 -b DEBUG -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc 
+ 1256  find ./ -iname Vlv.fd
+ 1257  find ../ -iname Vlv.fd
+ 1258  dmesg
+ 1259  cd ..
+ 1260  find ./ -iname *.efi
+ 1261  find ./ -iname *.efi |grep 64
+ 1262  find ./ -iname *.bin
+ 1263  cd ..
+ 1264  find ./ -iname MNW2CRB*
+ 1265  cd uefi/
+ 1266  find ./ -iname MNW2CRB*
+ 1267  find ./ -iname MAX*
+ 1268  find ./ -iname FirmwareUpdateIA32*
+ 1269  exit
+ 1270  cd /var/lo
+ 1271  cd /var/log/
+ 1272  ls
+ 1273  ls -la
+ 1274  cd -
+ 1275  ssh cyril@127.0.0.1 -l
+ 1276  ssh cyril@127.0.0.1 -I
+ 1277  ssh cyril@127.0.0.1 -i
+ 1278  ssh cyril@127.0.0.1 -i ccc
+ 1279  ls
+ 1280  la
+ 1281  ls
+ 1282  ssh'=
+ 1283  ssh
+ 1284  ssh -n
+ 1285  ssh -0help
+ 1286  ssh --help
+ 1287  cd /home/cyril/work/
+ 1288  ls
+ 1289  cd ..
+ 1290  ls
+ 1291  ssh cyril@127.0.0.1
+ 1292  ssh -p cyril  cyril@127.0.0.1 
+ 1293  ssh -P cyril  cyril@127.0.0.1 
+ 1294  ssh  cyril@127.0.0.1  -P cyril
+ 1295  ssh  cyril@127.0.0.1  -P 'cyril'
+ 1296  ssh  cyril@127.0.0.1 
+ 1297  ssh  cyril@127.0.0.1 -l
+ 1298  ssh  cyril@127.0.0.1 -n
+ 1299  ssh  cyril@127.0.0.1 -n -t
+ 1300  ssh  cyril@127.0.0.1  -t
+ 1301  cat ~/.ssh/id_rsa.pub
+ 1302  history  |grep media
+ 1303  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/uefi/edk2
+ 1304  ls
+ 1305  cd ..
+ 1306  l
+ 1307  ls
+ 1308  cd edk2-platforms/
+ 1309  ls
+ 1310  cd ..
+ 1311  cd edk2
+ 1312  ls
+ 1313  cd ..
+ 1314  cd Build/Vlv2TbltDevicePkgX64/
+ 1315  ls
+ 1316  Build_IFWI.sh MNW2
+ 1317  find ./ -iname "Build*"
+ 1318  sudo apt-get install uuid-dev
+ 1319  cd ..
+ 1320  ls
+ 1321  cd edk2-platforms/
+ 1322  ls
+ 1323  cd ..
+ 1324  find ./ -iname "Vlv2TbltDevicePkg*"
+ 1325  cd ./edk2-platforms/Platform/Intel/Vlv2TbltDevicePkg
+ 1326  ls
+ 1327  cd Stitch/
+ 1328  ls
+ 1329  cd IFWIHeader/
+ 1330  ls
+ 1331  ls -la
+ 1332  cd ..
+ 1333  ls
+ 1334  cd ..
+ 1335  ls
+ 1336  cd ..
+ 1337  ls
+ 1338  cd ..
+ 1339  ls
+ 1340  cd ..
+ 1341  ls
+ 1342  cd ..
+ 1343  ls
+ 1344  cd Build/
+ 1345  ls
+ 1346  cd Vlv2TbltDevicePkgX64/
+ 1347  ls
+ 1348  cd DEBUG_GCC5/
+ 1349  ls
+ 1350  ls -la
+ 1351  cd ..
+ 1352  find ./ -iname "*.efi"
+ 1353  find ./ -iname "*.efi" |grep Firmware -rin
+ 1354  find ./ -iname "*.efi" > ./log
+ 1355  vim ./log 
+ 1356  cat ./log  |grep Firmware -rin
+ 1357  cat ./log  |grep Firmware 
+ 1358  find ./ -iname "FirmwareUpdateX64*"
+ 1359  find ./ -iname "FirmwareUpdate*"
+ 1360  cd ./edk2-platforms/Platform/Intel/Vlv2TbltDevicePkg/Application/FirmwareUpdate
+ 1361  ls
+ 1362  cd..
+ 1363  cd ..
+ 1364  ld
+ 1365  ls
+ 1366  cd FirmwareUpdate/
+ 1367  ls
+ 1368  cd ..
+ 1369  find ./ -iname "FirmwareUpdate*"
+ 1370  exit
+ 1371  ls
+ 1372  mv ../uefi/silicon/ ./
+ 1373  ls
+ 1374  exit
+ 1375  cd /home/cyril/work/
+ 1376  ls
+ 1377  history 
+ 1378  cd  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/uefi/edk2
+ 1379  ~  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/uefi/edk2
+ 1380  ls
+ 1381  cd ..
+ 1382  ls
+ 1383  cd bu
+ 1384  ls
+ 1385  cd Build/
+ 1386  ls
+ 1387  cd Vlv2TbltDevicePkgX64/
+ 1388  ls
+ 1389  cd DEBUG_GCC5/
+ 1390  ls
+ 1391  ls -la
+ 1392  cd FV
+ 1393  ls
+ 1394  ls -la
+ 1395  cd ..
+ 1396  cd X64/
+ 1397  ls
+ 1398  cd ..
+ 1399  ls
+ 1400  export WORKSPACE=$PWD
+ 1401  export PACKAGES_PATH=$WORKSPACE/edk2:$WORKSPACE/edk2-platforms/Silicon/Intel:$WORKSPACE/edk2-platforms/Platform/Intel:$WORKSPACE/edk2-non-osi/Silicon/Intel
+ 1402  cd $WORKSPACE/edk2
+ 1403  . edksetup.sh
+ 1404  Build_IFWI.bat MNW2 Debug
+ 1405  find ./ -iname "*.sh"
+ 1406  cd ..
+ 1407  ls
+ 1408  cd edk2-platforms/
+ 1409  ls
+ 1410  cd Silicon/
+ 1411  ls
+ 1412  cd Intel/
+ 1413  ls
+ 1414  cd ..
+ 1415  mkdir silicon
+ 1416  cd silicon/
+ 1417  ls
+ 1418  cp -rf  ~/Downloads/minnowboard-max-1-01-binary-objects/minnowboard_max-1.01-binary.objects/ ./
+ 1419  ls
+ 1420  find ./ -iname "*.sh"
+ 1421  cd ..
+ 1422  find ./ -iname "*.sh"
+ 1423  cd ..
+ 1424  ls
+ 1425  mkdir maxboard
+ 1426  cd maxboard/
+ 1427  ls
+ 1428  git clone https://github.com/tianocore/edk2.git -b UDK2017
+ 1429  git branch
+ 1430  cd ..
+ 1431  ls
+ 1432  sudo apt-get install nasm
+ 1433  cd ..
+ 1434  cd edk2-platforms/Vlv2TbltDevicePkg/
+ 1435  ls
+ 1436  ./Build_IFWI.sh MNW2 Debug
+ 1437  cd /home/cyril/Downloads/
+ 1438  ls
+ 1439  tar xzf acpica-unix-20200430.tar.gz acpica-unix-20200430/
+ 1440  tar xzf acpica-unix-20200430.tar.gz 
+ 1441  cd acpica-unix-20200430/
+ 1442  make clean
+ 1443  make
+ 1444  make iasl
+ 1445  make acpixtract
+ 1446  make acpiexec
+ 1447  make acpihelp
+ 1448  make acpinames
+ 1449  make acpisrc
+ 1450  make acpibin
+ 1451  make install
+ 1452  sudo make install
+ 1453  gcc
+ 1454  gcc -v
+ 1455  sudo apt-get install bison flex
+ 1456  cd -
+ 1457  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/
+ 1458  ls
+ 1459  cd uefi/
+ 1460  ls
+ 1461  cd ..
+ 1462  ls
+ 1463  cd maxboard/
+ 1464  ls
+ 1465  cd edk2-platforms/Vlv2TbltDevicePkg/
+ 1466  ls
+ 1467  ./Build_IFWI.sh MNW2 Release
+ 1468  export
+ 1469  cd /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/maxboard/
+ 1470  ls
+ 1471  history 
+ 1472  cd edk2-platforms/Vlv2TbltDevicePkg/
+ 1473  ls
+ 1474  . Build_IFWI.sh MNW2
+ 1475  . Build_IFWI.sh MNW2 Release
+ 1476  make clean
+ 1477  . Build_IFWI.sh MNW2 Release
+ 1478  cd ..
+ 1479  rm -rf edk2-platforms/
+ 1480  ls
+ 1481  cd ..
+ 1482  export
+ 1483  rm -rf maxboard/
+ 1484  mkdir mb
+ 1485  cd mb/
+ 1486  git clone https://github.com/tianocore/edk2.git -b UDK2017
+ 1487  cd edk2/
+ 1488  git checkout vUDK2017
+ 1489  cd ..
+ 1490  git clone https://github.com/tianocore/edk2-platforms.git -b devel-MinnowBoardMax-UDK2017
+ 1491  ls
+ 1492  git clone https://github.com/tianocore/edk2-platforms.git -b devel-MinnowBoardMax-UDK2017
+ 1493  cd edk2-platforms/
+ 1494  git checkout 2a5f80b862e46de213a3f3635c43394deacdfb05
+ 1495  cd ..
+ 1496  cd edk2
+ 1497  ls
+ 1498  la
+ 1499  git branch
+ 1500  git checkout vUDK2017
+ 1501  cd ..
+ 1502  cd edk2-platforms/
+ 1503  ls
+ 1504  git checkout 2a5f80b862e46de213a3f3635c43394deacdfb05
+ 1505  exit
+ 1506  git clone https://github.com/tianocore/edk2-BaseTools-win32.git
+ 1507  cd edk2-BaseTools-win32/
+ 1508  git checkout 0e088c19ab31fccd1d2f55d9e4fe0314b57c0097
+ 1509  cd ..
+ 1510  chmod +x ./edk2/edksetup.sh 
+ 1511  chmod -R 777  ./edk2/BaseTools/
+ 1512  cd ./edk2-platforms/Vlv2TbltDevicePkg/
+ 1513  B
+ 1514  chmod +x Build_IFWI.sh 
+ 1515  . Build_IFWI.sh MNW2 Release
+ 1516  cd ../edk2
+ 1517  git submodule update --init
+ 1518  cd ..
+ 1519  ls
+ 1520  cd edk2-platforms/
+ 1521  ls -la
+ 1522  ls
+ 1523  cd Vlv2TbltDevicePkg/
+ 1524  ls
+ 1525  . Build_IFWI.sh MNW2 Release
+ 1526  ls -la  /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/mb/
+ 1527  gcc -v
+ 1528  sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+ 1529  sudo apt-get update
+ 1530  gcc -v
+ 1531  sudo update-alternatives --query gcc
+ 1532  . Build_IFWI.sh MNW2 Release
+ 1533  cd Vlv2TbltDevicePkg/
+ 1534  . Build_IFWI.sh MNW2 Release
+ 1535  cd ..
+ 1536  ls
+ 1537  rm -rf edk2-platforms/
+ 1538  history 
+ 1539  git clone https://github.com/tianocore/edk2-platforms.git -b devel-MinnowBoardMax-UDK2017
+ 1540  ls
+ 1541  cp -rfa edk2-platforms edk2-platforms-original
+ 1542  cd edk2-platforms
+ 1543  git checkout 2a5f80b862e46de213a3f3635c43394deacdfb05
+ 1544  ls
+ 1545  cd ..
+ 1546  ls
+ 1547  git clone https://github.com/tianocore/edk2.git
+ 1548  cd edk2-platforms
+ 1549  ls
+ 1550  cd 
+ 1551  cd -
+ 1552  cd Vlv2TbltDevicePkg/
+ 1553  ls
+ 1554  . Build_IFWI.sh MNW2 Release
+ 1555  cd -
+ 1556  . Build_IFWI.sh MNW2 Release
+ 1557  cd ..
+ 1558  ls
+ 1559  cd -
+ 1560  ls
+ 1561  cd Vlv2TbltDevicePkg/
+ 1562  ls
+ 1563  cd Stitch/
+ 1564  ld
+ 1565  ls
+ 1566  cd ls -la
+ 1567  ls -la
+ 1568  ls
+ 1569  cd ..
+ 1570  ls
+ 1571  cd ..
+ 1572  ls
+ 1573  cd silicon/
+ 1574  ls
+ 1575  cd ..
+ 1576  ls
+ 1577  cd  edk2-platforms
+ 1578  ls
+ 1579  cd Vlv2TbltDevicePkg
+ 1580  ls
+ 1581  vimcd ..
+ 1582  cd ..
+ 1583  cd ../../
+ 1584  cd Minnowboard/
+ 1585  ls
+ 1586  git clone https://github.com/tianocore/edk2-platforms.git -b devel-MinnowBoardMax-UDK2017
+ 1587  cd edk2-platforms/
+ 1588  git checkout 2a5f80b862e46de213a3f3635c43394deacdfb05
+ 1589  cd ..
+ 1590  git clone https://github.com/tianocore/edk2-BaseTools-win32.git
+ 1591  cd edk2-BaseTools-win32/
+ 1592  git checkout 0e088c19ab31fccd1d2f55d9e4fe0314b57c0097
+ 1593  cd ..
+ 1594  cd Minnowboard/
+ 1595  find ./ -iname OpensslLib
+ 1596  cd ./edk2/CryptoPkg/Library/OpensslLib
+ 1597  ls
+ 1598  cd op
+ 1599  mkdir  openssl
+ 1600  cd openssl/
+ 1601  ls
+ 1602  cd ..
+ 1603  rm -rf openssl/
+ 1604  cd ..
+ 1605  find ./ -iname OpensslLib.inf
+ 1606  ls -la /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7/work/Minnowboard/edk2/CryptoPkg/Library/OpensslLib/OpensslLib.inf
+ 1607  df
+ 1608  git clone https://github.com/tianocore/edk2.git -b UDK2017
+ 1609  cd edk2
+ 1610  ls
+ 1611  ls -la
+ 1612  git checkout vUDK2017
+ 1613  CD ..
+ 1614  cd CryptoPkg/Library/OpensslLib/
+ 1615  ls
+ 1616  cat ./OpenSSL-HOWTO.txt
+ 1617  git clone -b OpenSSL_1_1_0e https://github.com/openssl/openssl openssl
+ 1618  cd ..
+ 1619  ls
+ 1620  cp -rfa edk2 edk2-ooo
+ 1621  cd edk2
+ 1622  ls
+ 1623  cd ..
+ 1624  cd edk2-platforms
+ 1625  ls
+ 1626  cd Vlv2TbltDevicePkg/
+ 1627  ls
+ 1628  . Build_IFWI.sh MNW2 Release
+ 1629  cd ..
+ 1630  git clone https://github.com/tianocore/edk2-platforms.git -b devel-MinnowBoardMax-UDK2017
+ 1631  cp ~/Downloads/minnowboard-max-1-01-binary-objects.zip  ./
+ 1632  ls
+ 1633  cp ~/Downloads/minnowboard-max-1-01-binary-objects.zip  ./
+ 1634  ls
+ 1635  unzip minnowboard-max-1-01-binary-objects.zip 
+ 1636  ls
+ 1637  ls minnowboard_max-1.01-binary.objects/
+ 1638  cd ..
+ 1639  cd -
+ 1640  find ./ -iname "PchSmbusArpDisabled*"
+ 1641  cd /home/edk2
+ 1642  find ./ -iname "PchSmbusArpDisabled*"
+ 1643  find ./ -iname Vlv2BinaryPkg
+ 1644  ls
+ 1645  find ./ -iname "PchSmbusArpDisabled*"
+ 1646  cp -rfa minnowboard_max-1.01-binary.objects/ edk2/
+ 1647  find ./ -iname VLV.fd
+ 1648  ls
+ 1649  find ./ -iname VLV.fd 
+ 1650  cd ..
+ 1651  ls
+ 1652  cd uefi/
+ 1653  find ./ -iname VLV.fd 
+ 1654  cd ./Build/Vlv2TbltDevicePkgX64/DEBUG_GCC5
+ 1655  ls
+ 1656  cd ..
+ 1657  cd work/Minnowboard/
+ 1658  find ./ -iname PchSmbusArpDisabled.inf
+ 1659  cp -rfa minnowboard_max-1.01-binary.objects/* edk2/
+ 1660  history 
+ 1661  docker images
+ 1662  sudo docker images
+ 1663  sudo docker commit -a "cyril" -m "build ok" cbe3391ed512 3mdeb/edk2:v2
+ 1664  sudo docker images
+ 1665  sudo  docker commit --change "build ok"  cbe3391ed512 3mdeb/edk2:version2
+ 1666  docker ps
+ 1667  sudo docker ps
+ 1668  sudo  docker commit --change "build ok"  49ec35fe3ea7  3mdeb/edk2:version2
+ 1669  sudo  docker commit  49ec35fe3ea7  3mdeb/edk2:version2
+ 1670  sudo docker images
+ 1671  find ./ -iname VLV_SEC_REGION.bin
+ 1672  find ./ -iname 1.0.2.1060v5
+ 1673  ls -la /home/edk2/silicon/Vlv2MiscBinariesPkg/SEC/
+ 1674  ls -la /home/edk2/silicon/Vlv2MiscBinariesPkg/
+ 1675  ls -la /home/edk2/
+ 1676  ls
+ 1677  sudo docker ps
+ 1678  sudo  docker commit  49ec35fe3ea7  3mdeb/edk2:version3
+ 1679  find ./ -iname MNW2MAX_X64_D_0101_01_GCC.bin
+ 1680  exit
+ 1681  sudo apt-get install wine
+ 1682  sudo apt-get update
+ 1683  sudo apt install   wine-stable 3.0-1ubuntu1
+ 1684  sudo apt install  wine
+ 1685  sudo apt install wine-stable 3.0-1ubuntu1
+ 1686  sudo apt install wine-stable 
+ 1687  wine
+ 1688  sudo -s
+ 1689  sudo sudo apt-get purge wine 
+ 1690  sudo apt-get autoremove 
+ 1691  sudo apt-get clean 
+ 1692  sudo apt-get install -f 
+ 1693  rm -r ~/.wine 
+ 1694  rm -r ~/.local/share/applications/wine/Programms 
+ 1695  rm -rf ~/.local/share/applications/wine* 
+ 1696  sudo apt-get remove winetricks
+ 1697  sudo apt-get autoremove winetricks
+ 1698  sudo apt-get purge winetricks
+ 1699  sudo apt-get autoremove --purge winetricks
+ 1700  sudo dpkg --add-architecture i386
+ 1701  wget -qO - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
+ 1702  sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ eoan main'
+ 1703  sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+ 1704  sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport
+ 1705  sudo apt update
+ 1706  sudo apt install --install-recommends winehq-stable
+ 1707  sudo apt-get autoremove wine-stable
+ 1708  sudo apt install --install-recommends winehq-stable
+ 1709  sudo apt-get install libgnutls30:i386 libldap-2.4-2:i386 libgpg-error0:i386 libxml2:i386 libasound2-plugins:i386 libsdl2-2.0-0:i386 libfreetype6:i386 libdbus-1-3:i386 libsqlite3-0:i386
+ 1710  sudo apt install --install-recommends winehq-stable
+ 1711  sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport
+ 1712  sudo apt update
+ 1713  sudo apt install --install-recommends winehq-stable
+ 1714  sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport
+ 1715  cd /
+ 1716  find ./ -iname "*.exp"
+ 1717  ifconfig
+ 1718  history 
+ 1719  wine
+ 1720  sudo apt install wine-stable     
+ 1721  sudo apt-get install libgnutls30:i386 libldap-2.4-2:i386 libgpg-error0:i386 libxml2:i386 libasound2-plugins:i386 libsdl2-2.0-0:i386 libfreetype6:i386 libdbus-1-3:i386 libsqlite3-0:i386
+ 1722  sudo dpkg --add-architecture i386
+ 1723  wget -nc https://dl.winehq.org/wine-builds/winehq.key; sudo apt-key add winehq.key
+ 1724  sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ eoan main'
+ 1725  sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport
+ 1726  sudo apt update && sudo apt install --install-recommends winehq-stable
+ 1727  sudo apt install --install-recommends winehq-stable
+ 1728  sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main'
+ 1729  sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport
+ 1730  sudo apt update && sudo apt install --install-recommends winehq-stable
+ 1731  sudo apt install --install-recommends winehq-stable
+ 1732  wine
+ 1733  wine-
+ 1734  sudo apt install --install-recommends winehq-stable
+ 1735  sudo apt install  wine
+ 1736  df
+ 1737  cd  /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7
+ 1738  ls
+ 1739  cd work/
+ 1740  ls
+ 1741  cd Minnowboard/
+ 1742  find ./ -iname "IBBL.Fv"
+ 1743  find ./ -iname "*.Fv"
+ 1744  find ./ -iname "IBBL*"
+ 1745  find ./ -iname "FSP"
+ 1746  find ./ -iname "FSP*"
+ 1747  find ./ -iname "FspsUpd.h"
+ 1748  tree
+ 1749  grep -rin FSPMCONFIG ./
+ 1750  grep -rin Board
+ 1751  grep -rin Board ./
+ 1752  grep -rin Board ./ |grep init
+ 1753  ls
+ 1754  cd edk2
+ 1755  git branch
+ 1756  ls
+ 1757  cd ..
+ 1758  cd edk2-platforms/
+ 1759  git branch
+ 1760  ls
+ 1761  cd Vlv2DeviceRefCodePkg
+ 1762  ls
+ 1763  ltree
+ 1764  tree
+ 1765  git branch
+ 1766  cd ..
+ 1767  ls
+ 1768  cd ..
+ 1769  find ./ -iname MdePkg
+ 1770  cd edk2
+ 1771  ls
+ 1772  cd IntelFrameworkPkg
+ 1773  ls
+ 1774  cd ..
+ 1775  find ./ -iname "*.c"
+ 1776  ls
+ 1777  cd ..
+ 1778  cd -
+ 1779  ls
+ 1780  cd Vlv2TbltDevicePkg
+ 1781  ls
+ 1782  find ./ -iname "*.c"
+ 1783  cat ./AcpiPlatform/AcpiPlatform.c
+ 1784  ls
+ 1785  cd ..
+ 1786  grep -rin printf ./
+ 1787  cd -
+ 1788  grep -rin printf ./
+ 1789  grep -rin print ./
+ 1790  ls
+ 1791  cd P
+ 1792  cd PciPlatform/
+ 1793  ls
+ 1794  vim ./BoardPciPlatform.c 
+ 1795  ls
+ 1796  vim ./PciPlatform.c
+ 1797  dmesg
+ 1798  df
+ 1799  cd  /media/cyril/903b7ef3-8170-4141-a7b8-208fb5bb97d7
+ 1800  ls
+ 1801  cd work/
+ 1802  ls
+ 1803  cd BMC/
+ 1804  ls
+ 1805  cd fan21
+ 1806  gitk
+ 1807  ls
+ 1808  cd openbmc/
+ 1809  gitk
+ 1810  cd ..
+ 1811  ls
+ 1812  cd ..
+ 1813  ls
+ 1814  cd openbmc/
+ 1815  ls
+ 1816  cd ..
+ 1817  ls
+ 1818  cd fan
+ 1819  ls
+ 1820  gitk
+ 1821  ls
+ 1822  cd openbmc/
+ 1823  ls
+ 1824  gitk
+ 1825  sudo minicom /dev/ttyUSB0
+ 1826  cd /home/cyril/Downloads/esx-illesxb03-2020-04-17--09.46-2104116/
+ 1827  ls
+ 1828  grep -rin vmnic3 ./
+ 1829  grep -rin vmnic3 ./ |grep qed
+ 1830  grep -rin vmnic2 ./ |grep qed
+ 1831  grep -rin vmnic1 ./ |grep qed
+ 1832  grep -rin vmnic2 ./ |grep qed
+ 1833  grep -rin vmnic3 ./ |grep qed
+ 1834  grep -rin power ./
+ 1835  grep -rin vmnic3 ./ |grep qed
+ 1836  grep -rin qeden |grep error
+ 1837  sudo chmod 777 /var/
+ 1838  sudo chmod 777 var/core/
+ 1839  cat var/core/vmkernel-zdump.1.FRAG-00002:580:2020-04-17T03:08:02.321Z
+ 1840  cat var/core/vmkernel-zdump.1.FRAG-00002 
+ 1841  grep -rin qeden |grep error
+ 1842  vim  var/core/vmkernel-zdump.1.FRAG-00002 
+ 1843  vim  var/core/vmkernel-zdump.1.FRAG-00000
+ 1844  vim  var/core/vmkernel-zdump.1.FRAG-00007
+ 1845  grep -rin ecore_int_attentions ./
+ 1846  vim  var/core/vmkernel-zdump.1.FRAG-00002 
+ 1847  grep -rin ecore ./
+ 1848  grep -rin ecore ./ |grep init
+ 1849  vim ./var/core/vmkernel-zdump.1.FRAG-00002
+ 1850  grep -rin UEFI ./
+ 1851  grep -rin PSOD ./
+ 1852  cl31cl
+ 1853  grep -rin power ./
+ 1854  grep -rin qlnativefc ./
+ 1855  grep error
+ 1856  grep -rin qlnativefc ./ |grep error
+ 1857  grep -rin qlnativefc ./
+ 1858  qd ..
+ 1859  cd ..
+ 1860  cd esx-illesxb04.ill.rpharm.de-2020-05-15--19.02-2119285/
+ 1861  ls
+ 1862  grep -rin qeden |grep error
+ 1863  grep -rin UMCE ./
+ 1864  grep -rin vmi
+ 1865  grep -rin vmnic3 ./ 
+ 1866  exit
+ 1867  cd /home/cyril/
+ 1868  ls
+ 1869  ls -la
+ 1870  cd .wine/d
+ 1871  cd .wine/
+ 1872  ls
+ 1873  cd drive_c/
+ 1874  ls
+ 1875  cd /media/cyril/
+ 1876  ls
+ 1877  cd 500G/
+ 1878  ls
+ 1879  df
+ 1880  mkdir ReactNative
+ 1881  cd ReactNative/
+ 1882  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时19 Flexbox和多列布局.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B619%20Flexbox%E5%92%8C%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80.mp4"
+ 1883  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时22 获取网络数据02.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B622%20%E8%8E%B7%E5%8F%96%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE02.mp4"
+ 1884  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时17 如何规范项目代码.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B617%20%E5%A6%82%E4%BD%95%E8%A7%84%E8%8C%83%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81.mp4"
+ 1885  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时29 使用Linking调用播放视频.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B629%20%E4%BD%BF%E7%94%A8Linking%E8%B0%83%E7%94%A8%E6%92%AD%E6%94%BE%E8%A7%86%E9%A2%91.mp4"
+ 1886  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时25 TabNavigator(选项卡切换).mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B625%20TabNavigator(%E9%80%89%E9%A1%B9%E5%8D%A1%E5%88%87%E6%8D%A2).mp4"
+ 1887  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时8 Javascript基础.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B68%20Javascript%E5%9F%BA%E7%A1%80.mp4"
+ 1888  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时24 StackNavigator(页面跳转).mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B624%20StackNavigator(%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC).mp4"
+ 1889  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时18 基本样式和布局.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B618%20%E5%9F%BA%E6%9C%AC%E6%A0%B7%E5%BC%8F%E5%92%8C%E5%B8%83%E5%B1%80.mp4"
+ 1890  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时21 评分星星.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B621%20%E8%AF%84%E5%88%86%E6%98%9F%E6%98%9F.mp4"
+ 1891  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时11 React JSX基础.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B611%20React%20JSX%E5%9F%BA%E7%A1%80.mp4"
+ 1892  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时16 项目的基本结构.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B616%20%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84.mp4"
+ 1893  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时27 本地缓存数据.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B627%20%E6%9C%AC%E5%9C%B0%E7%BC%93%E5%AD%98%E6%95%B0%E6%8D%AE.mp4"
+ 1894  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时20 FlatList的基本用法.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B620%20FlatList%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95.mp4"
+ 1895  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时14 组件间通信.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B614%20%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1.mp4"
+ 1896  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时23 刷新和分页的补充.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B623%20%E5%88%B7%E6%96%B0%E5%92%8C%E5%88%86%E9%A1%B5%E7%9A%84%E8%A1%A5%E5%85%85.mp4"
+ 1897  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时26 针对安卓的界面调整.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B626%20%E9%92%88%E5%AF%B9%E5%AE%89%E5%8D%93%E7%9A%84%E7%95%8C%E9%9D%A2%E8%B0%83%E6%95%B4.mp4"
+ 1898  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时10 Node基础.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B610%20Node%E5%9F%BA%E7%A1%80.mp4"
+ 1899  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时7 开发工具选用Webstorm.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B67%20%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%80%89%E7%94%A8Webstorm.mp4"
+ 1900  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时13 组件的生命周期.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B613%20%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.mp4"
+ 1901  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时28 悬浮层与绝对定位.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B628%20%E6%82%AC%E6%B5%AE%E5%B1%82%E4%B8%8E%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D.mp4"
+ 1902  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时15 官方组件和文档一览.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B615%20%E5%AE%98%E6%96%B9%E7%BB%84%E4%BB%B6%E5%92%8C%E6%96%87%E6%A1%A3%E4%B8%80%E8%A7%88.mp4"
+ 1903  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时12 初识React组件化开发.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B612%20%E5%88%9D%E8%AF%86React%E7%BB%84%E4%BB%B6%E5%8C%96%E5%BC%80%E5%8F%91.mp4"
+ 1904  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时30 Android打包发布.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B630%20Android%E6%89%93%E5%8C%85%E5%8F%91%E5%B8%83.mp4"
+ 1905  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时9 ES6基础.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B69%20ES6%E5%9F%BA%E7%A1%80.mp4"
+ 1906  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "【www.zxit8.com】 课时22 获取网络数据01.mp4" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E3%80%90www.zxit8.com%E3%80%91%20%E8%AF%BE%E6%97%B622%20%E8%8E%B7%E5%8F%96%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE01.mp4"
+ 1907  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/课程源码（见参考资料）/电影源码0605.zip" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F%E8%AF%BE%E7%A8%8B%E6%BA%90%E7%A0%81%EF%BC%88%E8%A7%81%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99%EF%BC%89%2F%E7%94%B5%E5%BD%B1%E6%BA%90%E7%A0%810605.zip"
+ 1908  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/19/素材.zip" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F19%2F%E7%B4%A0%E6%9D%90.zip"
+ 1909  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/14/CountDown.js" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F14%2FCountDown.js"
+ 1910  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/14/组件间通信.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F14%2F%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1.pptx"
+ 1911  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/13/组件的生命周期.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F13%2F%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.pptx"
+ 1912  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/12/GoodMorning.js" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F12%2FGoodMorning.js"
+ 1913  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/12/Likes.js" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F12%2FLikes.js"
+ 1914  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/12/初识React组件化开发.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F12%2F%E5%88%9D%E8%AF%86React%E7%BB%84%E4%BB%B6%E5%8C%96%E5%BC%80%E5%8F%91.pptx"
+ 1915  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/11/React JSX基础.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F11%2FReact%20JSX%E5%9F%BA%E7%A1%80.pptx"
+ 1916  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/10/Node基础.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F10%2FNode%E5%9F%BA%E7%A1%80.pptx"
+ 1917  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/09/ES6基础.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F09%2FES6%E5%9F%BA%E7%A1%80.pptx"
+ 1918  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程资料/08/JavaScript基础.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590602199-106b5c4d943b79d7b1eb282ef303e5a8" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F08%2FJavaScript%E5%9F%BA%E7%A1%80.pptx"
+ 1919  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "01/React Native架构和原理的简单介绍.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F01%2FReact%20Native%E6%9E%B6%E6%9E%84%E5%92%8C%E5%8E%9F%E7%90%86%E7%9A%84%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D.pptx"
+ 1920  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "08/JavaScript基础.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F08%2FJavaScript%E5%9F%BA%E7%A1%80.pptx"
+ 1921  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "10/Node基础.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F10%2FNode%E5%9F%BA%E7%A1%80.pptx"
+ 1922  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "13/组件的生命周期.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F13%2F%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.pptx"
+ 1923  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "11/React JSX基础.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F11%2FReact%20JSX%E5%9F%BA%E7%A1%80.pptx"
+ 1924  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "19/素材.zip" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F19%2F%E7%B4%A0%E6%9D%90.zip"
+ 1925  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "09/ES6基础.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F09%2FES6%E5%9F%BA%E7%A1%80.pptx"
+ 1926  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "12/GoodMorning.js" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F12%2FGoodMorning.js"
+ 1927  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "12/Likes.js" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F12%2FLikes.js"
+ 1928  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "12/初识React组件化开发.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F12%2F%E5%88%9D%E8%AF%86React%E7%BB%84%E4%BB%B6%E5%8C%96%E5%BC%80%E5%8F%91.pptx"
+ 1929  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "课程源码（见参考资料）/电影源码0605.zip" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F%E8%AF%BE%E7%A8%8B%E6%BA%90%E7%A0%81%EF%BC%88%E8%A7%81%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99%EF%BC%89%2F%E7%94%B5%E5%BD%B1%E6%BA%90%E7%A0%810605.zip"
+ 1930  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "14/CountDown.js" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F14%2FCountDown.js"
+ 1931  aria2c -c -s10 -k1M -x16 --enable-rpc=false -o "14/组件间通信.pptx" --header "User-Agent: netdisk;6.0.0.12;PC;PC-Windows;10.0.16299;WindowsBaiduYunGuanJia" --header "Referer: https://pan.baidu.com/disk/home" --header "Cookie: BDUSS=FWNlljd1dhNGRvSlowMk1FazIyanhVZ1AxV0NHLWVsWGlFemNwMGM2ckE0TmRlRVFBQUFBJCQAAAAAAAAAAAEAAACbbfUiaHNpYW9qdW5nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBTsF7AU7BeNE; pcsett=1590678561-f92378f2ee2be8d39446520247ec8903" "https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=250528&path=%2F%E5%90%AC%E6%99%B4%E6%98%8E%E8%80%81%E5%B8%88%E4%BB%8E%E5%A4%B4%E8%AE%B2React%20Native%2F%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99%2F14%2F%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1.pptx"
+ 1932  history 
+ 1933  sudo chmod 777 /dev/kvm;emulator -avd cyril
+ 1934  cd /mnt/
+ 1935  ls
+ 1936  df
+ 1937  cd /media/cyril/
+ 1938  ls
+ 1939  df
+ 1940  cd /media/
+ 1941  ls
+ 1942  cd cyril/
+ 1943  ls
+ 1944  dmesg
+ 1945  mount /dev/sdc  /mnt/
+ 1946  sudo mount /dev/sdc2 /mnt/
+ 1947  fdisk -l /dev/sdc1
+ 1948  df
+ 1949  fdisk -l /dev/sdd2
+ 1950  sudo fdisk -l /dev/sdd2
+ 1951  parted -l /dev/sdc1
+ 1952  parted -l /dev/sdd
+ 1953  sudo lsblk /dev/sdd2
+ 1954  sudo fdisk -l /dev/s
+ 1955  dmesg
+ 1956  sudo fdisk -l /dev/sdc2
+ 1957  sudo lsblk /dev/sdc2
+ 1958  df
+ 1959  umount /mnt
+ 1960  sudo umount /mnt
+ 1961  cd /mnt/
+ 1962  ls
+ 1963  cd ..
+ 1964  ls
+ 1965  cd /
+ 1966  mkdir /mnt2
+ 1967  sudo mkdir /mnt2
+ 1968  df
+ 1969  dmesg
+ 1970  sudo ntfsfix /dev/sdb1
+ 1971  sudo ntfsfix /dev/sdb
+ 1972  chkdsk.
+ 1973  chkdsk
+ 1974  chkdsk /dev/sdb1
+ 1975  chkdsk /dev/sdb
+ 1976  df
+ 1977  dmesg
+ 1978  sudo mount /dev/sdd2 /mnt/
+ 1979  dmesg
+ 1980  mount /dev/sdb1 /mnt2
+ 1981  sudo mount /dev/sdb1 /mnt2
+ 1982  sudo mount /dev/sdc2  /mnt
+ 1983  history  |grep mount
+ 1984  dmesg
+ 1985  sudo mount /dev/sdc2  /mnt
+ 1986  df
+ 1987  dmesg
+ 1988  sudo mount /dev/sdb1 /mnt
+ 1989  sudo mount /dev/sdc2  /mnt2
+ 1990  cd /
+ 1991  umount /mnt
+ 1992  sudo umount /mnt
+ 1993  dmesg
+ 1994  history  |grep mount
+ 1995  cd /
+ 1996  sudo umount /mnt2
+ 1997  ls /dev/sdb*
+ 1998  sudo mount /dev/sdb2  /mnt2
+ 1999  history 
+ 2000  history  > ./log
